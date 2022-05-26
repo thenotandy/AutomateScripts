@@ -5,7 +5,7 @@ $string = Get-ItemProperty -Path $interfaceKeyPath -Name 'NameServer' | select  
 $cnt = 1
 foreach ($detailexplain in $string.Split(","))
 {
-    $Internal = -join($Internal,$detailexplain | select-string  -Pattern $pattern -NotMatch)
+    $Internal = -join($Internal,$detailexplain | select-string  -Pattern $pattern -NotMatch) + ", "
     $cnt++
 }
 $Internal
