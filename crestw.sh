@@ -1,4 +1,3 @@
-apt update -y
 java -version
 apt install -y openjdk-17-jre
 java -version
