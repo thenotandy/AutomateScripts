@@ -3,7 +3,7 @@ $string = Get-DnsServerForwarder | select -expandproperty IPAddress | select -ex
 $cnt = 1
 foreach ($IPAddress in $string)
 {
-    $Internal = -join($Internal,$IPAddress | select-string  -Pattern $pattern -NotMatch) + ", "
+    $Internal = -join($Internal,$IPAddress | select-string  -Pattern $pattern -NotMatch)
     $cnt++
 }
 $Internal
