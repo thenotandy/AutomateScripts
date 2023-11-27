@@ -10,7 +10,7 @@ New-ItemProperty -Path 'HKCU:\Software\Microsoft\Office\16.0\Outlook\AutoDiscove
 $Name = $env:USERNAME
 $Domain = $env:USERDOMAIN + ".com"
 $domainlower = $Domain.ToLower()
-$NewProfileName = $Name + " 365"
+$NewProfileName = $Name + "365"
 
 $registryPath = "HKCU:\Software\Microsoft\Office\16.0\Outlook\AutoDiscover"
 $Name = "ZeroConfigExchangeOnce"
