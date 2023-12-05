@@ -51,3 +51,5 @@ ELSE
 $registryPath3 = "HKCU:\Software\Microsoft\Office\16.0\Outlook\Profiles"
 $Name = $NewProfileName
 New-Item -Path $registryPath3 -Name $name -Value $value -Force | Out-Null
+
+ipconfig /flushdns
