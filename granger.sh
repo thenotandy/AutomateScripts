@@ -1,5 +1,5 @@
 apt install -y --fix-missing
-wget "https://kgroupcompanies.hostedrmm.com/LabTech/Deployment.aspx?InstallerToken=f117a366838c001d222fea8384a66b05" -O agent.zip
+wget "https://kgroupcompanies.hostedrmm.com/LabTech/Deployment.aspx?InstallerToken=24ecf37d20cc22d6aa57c3388867cbd2" -O agent.zip
 unzip ./agent.zip
 cd LTechAgent
 chmod +x install.sh
